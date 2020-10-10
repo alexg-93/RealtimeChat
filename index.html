@@ -8,13 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-       
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
     <body>
 
         <!--Container & title-->
-        <div class="container my-4">
-            <h1 class="my-4 text-center">Live chat</h1>
+        <div class="container my-4">  
+        <h1 class="my-4 text-center">Live chat</h1>
+        <div class="illustration d-flex justify-content-center">
+            <img src="messages.png" class="img-1">
+        </div>   
             
 
         <!--buttons & chatrooms-->
@@ -33,11 +36,11 @@
           <form class="new-chat my-3">
               <div class="input-group">
                   <div class="input-group-prepend">
-                      <div class="input-group-text">Your message:</div>
+                      <div class="input-group-text" >Your message:</div>
                   </div>
                   <input type="text" class="type form-control" id="message" required>
-                 <div class="input-group-append">
-                     <input type="submit" class="btn btn-primary" value="send">
+                 <div class="input-group-append" >
+                     <input type="submit" class="btn btn-primary " value="send"><i class="fal fa-paper-plane send"></i>
                  </div>
 
               </div>
@@ -50,7 +53,7 @@
                   </div>
                   <input type="text" class="type form-control" id="name" required>
                  <div class="input-group-append">
-                     <input type="submit" class="btn btn-success" value="update">
+                     <input type="submit" class="btn btn-success" value="update"><i class="fal fa-user-edit edit"></i>
                  </div>
                   
               </div>
@@ -86,11 +89,9 @@
 <script src="chat.js" async defer></script>
 <script src="ui.js" async defer></script>
 <script src="app.js" async defer></script>
-    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
 
      
-        
-
-
     </body>
 </html>
