@@ -5,7 +5,8 @@ const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const updateMsg = document.querySelector('.update-msg');
 const rooms = document.querySelector('.chat-rooms');
-
+// class instances
+const chatUI = new ChatUI(chatList);
 
 
 // add a new chat
@@ -38,14 +39,10 @@ rooms.addEventListener('click', e => {
     chatroom.getChats(chat => chatUI.render(chat));
   }
 });
-
 // check local storage for name
 const username = localStorage.username ? localStorage.username : 'anon';
-
-
-// class instances
-const chatUI = new ChatUI(chatList);
 const chatroom = new Chatroom('gaming', username);
+
 
 // get chats & render
 chatroom.getChats(data => chatUI.render(data));
